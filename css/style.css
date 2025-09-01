@@ -377,28 +377,6 @@ h1, h2, h3, h4, h5, h6{
   transition: transform 0.3s ease;
 }
 
-/* Controls */
-.banner_two_control {
-  position: absolute;
-  top: 45%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.7);
-  color: #fff;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 10px 14px;
-  z-index: 5;
-  border-radius: 50%;
-  transition: background 0.3s ease;
-}
-.banner_two_control:hover {
-  background: rgb(36, 238, 137);
-  color: #000;
-}
-.banner_two_prev { left: 10px; }
-.banner_two_next { right: 10px; }
-
 /* Indicators */
 .banner_two_indicators {
   text-align: center;

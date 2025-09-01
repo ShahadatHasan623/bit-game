@@ -1,0 +1,5 @@
+<svg data-cy="ic-top-bets" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" class="sc-1x10e4w-1 bcIndF" style="fill: currentcolor; color: inherit; width: auto; height: 16px;">
+<path d="M1 0C0.447715 0 0 0.447715 0 1V4C0 4.55228 0.447716 5 1 5H13C13.5523 5 14 4.55228 14 4V1C14 0.447715 13.5523 0 13 0H1Z"></path>
+<path d="M0 8C0 7.44771 0.447715 7 1 7H13C13.5523 7 14 7.44772 14 8V9C14 9.55229 13.5523 10 13 10H1C0.447716 10 0 9.55228 0 9V8Z"></path>
+<path d="M0 13C0 12.4477 0.447715 12 1 12H13C13.5523 12 14 12.4477 14 13C14 13.5523 13.5523 14 13 14H1C0.447716 14 0 13.5523 0 13Z"></path>
+</svg>

@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BG.Game: Mobile Version</title>
+
+  <!-- Bootstrap CSS (still useful for resets/utilities) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (working version) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="mobile-container">
+
+    <!-- Header Start -->
+     <div class="header_main">
+      <div class="top_icon_nav">
+  <div class="nav_item"><i class="fa-solid fa-house"></i></div>
+  <div class="nav_item"><i class="fa-solid fa-signal"></i></div>
+  <div class="nav_item"><i class="fa-regular fa-star"></i></div>
+  <div class="nav_item"><i class="fa-solid fa-file-lines"></i></div>
+  <div class="nav_after"></div>
+  <div class="nav_item"><i class="fa-solid fa-futbol"></i></div>
+  <div class="nav_item"><i class="fa-solid fa-circle-dot"></i></div>
+  <div class="nav_item notif"><i class="fa-solid fa-video"></i></div>
+  <div class="nav_item"><i class="fa-solid fa-chart-simple"></i></div>
+ <!-- Nav Item -->
+<div class="nav_item" id="searchIcon">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+
+</div>
+     </div>
+     <!-- Popup Search Bar -->
+<div class="search_popup" id="searchPopup">
+  <input type="text" placeholder="Search..." id="searchInput">
+  <button id="searchClose"><i class="fa-solid fa-xmark"></i></button>
+</div>
+    <!-- Header End -->
+
+        <!-- Banner Slider Container -->
+<div class="banner_slider">
+  <!-- Banner 1 -->
+  <div class="banner_item active">
+    <div class="banner_header">
+      <div class="banner_header_relative">
+        <div class="banner_header_name active"><i class="fa-solid fa-file"></i><h5>Highlight</h5></div>
+        <div class="banner_header_name"><i class="fa-solid fa-calendar"></i><h5>Event Builder</h5></div>
+        <div class="banner_header_name"><i class="fa-solid fa-bell"></i><h5>Bets Feed</h5></div>
+      </div>
+    </div>
+    <div class="banner_img">
+      <img src="image/banner.jpg" alt="banner">
+      <div class="banner_z100">
+        <div class="banner_z100_under">
+          <div class="banner_z100_under_left">
+            <div><h4>Grand Slam ' US Opennnn</h4></div>
+            <div><img src="image/highlight.svg" alt="highlight"><h6>Sinner, Jannik</h6></div>
+          </div>
+          <div class="banner_z100_under_right">
+            <div class="banner_z100_under_right_right"><h4>Grand Slam ' US Open</h4></div>
+            <div><h6>Sinner, Jannik</h6><img src="image/highlight.svg" alt="highlight"></div>
+          </div>
+        </div>
+        <div class="betting_row">
+          <div class="bet_option"><span class="label">1</span><span class="odd">1.39</span></div>
+          <div class="bet_option"><span class="label">Draw</span><span class="odd">4.9</span></div>
+          <div class="bet_option"><span class="label">2</span><span class="odd">7.4</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Banner 2 -->
+  <div class="banner_item">
+    <div class="banner_header">
+      <div class="banner_header_relative">
+        <div class="banner_header_name active"><i class="fa-solid fa-file"></i><h5>Highlight</h5></div>
+        <div class="banner_header_name"><i class="fa-solid fa-calendar"></i><h5>Event Builder</h5></div>
+        <div class="banner_header_name"><i class="fa-solid fa-bell"></i><h5>Bets Feed</h5></div>
+      </div>
+    </div>
+    <div class="banner_img">
+      <img src="./image/banner.jpg" alt="banner">
+      <div class="banner_z100">
+        <div class="banner_z100_under">
+          <div class="banner_z100_under_left">
+            <div><h4>Champions League Final</h4></div>
+            <div><img src="image/highlight.svg" alt="highlight"><h6>Messi, Lionel</h6></div>
+          </div>
+          <div class="banner_z100_under_right">
+            <div class="banner_z100_under_right_right"><h4>Champions League</h4></div>
+            <div><h6>Messi, Lionel</h6><img src="image/highlight.svg" alt="highlight"></div>
+          </div>
+        </div>
+        <div class="betting_row">
+          <div class="bet_option"><span class="label">1</span><span class="odd">2.1</span></div>
+          <div class="bet_option"><span class="label">Draw</span><span class="odd">3.5</span></div>
+          <div class="bet_option"><span class="label">2</span><span class="odd">5.6</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner 3 -->
+  <div class="banner_item">
+    <div class="banner_header">
+      <div class="banner_header_relative">
+        <div class="banner_header_name active"><i class="fa-solid fa-file"></i><h5>Highlight</h5></div>
+        <div class="banner_header_name"><i class="fa-solid fa-calendar"></i><h5>Event Builder</h5></div>
+        <div class="banner_header_name"><i class="fa-solid fa-bell"></i><h5>Bets Feed</h5></div>
+      </div>
+    </div>
+    <div class="banner_img">
+      <img src="./image/banner.jpg" alt="banner">
+      <div class="banner_z100">
+        <div class="banner_z100_under">
+          <div class="banner_z100_under_left">
+            <div><h4>World Cup Final</h4></div>
+            <div><img src="image/highlight.svg" alt="highlight"><h6>Ronaldo, Cristiano</h6></div>
+          </div>
+          <div class="banner_z100_under_right">
+            <div class="banner_z100_under_right_right"><h4>World Cup 2026</h4></div>
+            <div><h6>Ronaldo, Cristiano</h6><img src="image/highlight.svg" alt="highlight"></div>
+          </div>
+        </div>
+        <div class="betting_row">
+          <div class="bet_option"><span class="label">1</span><span class="odd">1.8</span></div>
+          <div class="bet_option"><span class="label">Draw</span><span class="odd">3.9</span></div>
+          <div class="bet_option"><span class="label">2</span><span class="odd">6.2</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner_indicators"></div>
+
+
+
+        <!-- Banner Two Start -->
+         <div class="banner_two_slider">
+  <div class="banner_two_track">
+    <!-- 10 cards (same structure repeated) -->
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner_two_img">
+      <img src="image/banner_two.jpeg" alt="banner_two">
+      <div class="banner_two_upper">
+        <div class="banner_two_upper_left"><span>Boost</span></div>
+        <div class="banner_two_upper_middle"><i class="fa-solid fa-face-smile"></i><h4>Real Madrid vs RCD Mollarca</h4></div>
+        <div class="banner_two_upper_right"><h6>Tomorrow, 01:30</h6></div>
+      </div>
+      <div class="banner_two_middle">
+        <h3>over 3.5 & yes</h3>
+        <h5>Total & both teams to score</h5>
+      </div>
+      <div class="banner_two_end">
+        <div class="banner_two_betting-card">
+          <div class="banner_two_odds-box">
+            <span class="banner_two_odd banner_two_crossed">2.9</span>
+            <span class="banner_two_divider"></span>
+            <span class="banner_two_odd banner_two_active">3.05</span>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+  <!-- Controls -->
+  <button class="banner_two_control banner_two_prev">&#10094;</button>
+  <button class="banner_two_control banner_two_next">&#10095;</button>
+</div>
+
+<!-- Indicators -->
+<div class="banner_two_indicators"></div>
+
+
+        <!-- Banner Two End -->
+
+        <!-- Popular Start -->
+        <div class="popular">
+      <div class="popular_up">
+        <i class="fa-solid fa-crown"></i><h4>Popular</h4>
+      </div>
+        <div class="popular_header">
+          <div class="popular_header_relative">
+            <div class="popular_header_name active"><i class="fa-solid fa-file"></i><h5>Soccer</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-calendar"></i><h5>Basketball</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Cricket</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Tennis</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Counter-Strike</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Ice Hockey</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Data 2</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eCricket</h5></div>
+          </div>
+        </div>
+        <!-- Box 1 Start -->
+        <div class="overview">
+          <div class="">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="">
+            <h5>Tommorrow, 00:00</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+          <div class="multiply">
+            <h5>1×2</h5>
+          </div>
+          <div class="betting_row">
+  <div class="bet_option"><span class="label">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label">2</span><span class="odd">7.4</span></div>
+</div>
+            <!--  -->
+          </div>
+        </div>
+        <!-- Box 1 Start -->
+        <div class="overview">
+          <div class="">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="">
+            <h5>Tommorrow, 00:00</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+          <div class="multiply">
+            <h5>1×2</h5>
+          </div>
+            <div class="betting_row">
+  <div class="bet_option"><span class="label deep">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label deep">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label deep">2</span><span class="odd">7.4</span></div>
+  <div class="bet_option_last"><i class="fa-solid fa-arrow-down"></i></span></div>
+</div>
+        </div>
+        <!-- Box 1 End -->
+
+
+        <!-- Box 2 Start -->
+        <div class="overview">
+          <div class="">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="">
+            <h5>Tommorrow, 00:00</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+          <div class="multiply">
+            <h5>1×2</h5>
+          </div>
+            <div class="betting_row">
+  <div class="bet_option"><span class="label deep">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label deep">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label deep">2</span><span class="odd">7.4</span></div>
+  <div class="bet_option_last"><i class="fa-solid fa-arrow-down"></i></span></div>
+</div>
+        </div>
+        <!-- Box 2 End -->
+
+
+        <!-- Box 3 Start -->
+        <div class="overview">
+          <div class="">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="">
+            <h5>Tommorrow, 00:00</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+          <div class="multiply">
+            <h5>1×2</h5>
+          </div>
+            <div class="betting_row">
+  <div class="bet_option"><span class="label deep">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label deep">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label deep">2</span><span class="odd">7.4</span></div>
+</div>
+        </div>
+        <!-- Box 3 End -->
+
+        <!-- Popular End -->
+
+        <!-- Tournament Start -->
+        <div class="tournament_main">
+        <div class="tournament_up">
+        <i class="fa-solid fa-crown"></i><h4>Tournament</h4>
+      </div>
+      <div class="tournament_banner">
+        <div class="">
+          <img src="image/tournament_banner.jpg" alt="tournament_banner">
+        </div>
+        <div class="tournament_banner_z100">
+          <div class="tournament_banner_z100_one">
+            <i class="fa-brands fa-readme"></i><h3>Read Rules</h3>
+          </div>
+          <div class="center">
+            <div class="tournament_banner_z100_two">
+            <h2>$50,000 Virtual Tournament</h2>
+          <h4>Tournament has Ended</h4>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table Start -->
+      <div class="leaderboard">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player</th>
+          <th>Score</th>
+          <th>Prize</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>🐐 Ami******</td>
+          <td>104785</td>
+          <td>€2,500</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>🦊 Fri******</td>
+          <td>81912</td>
+          <td>€1,500</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>🐲 Duc******</td>
+          <td>55640</td>
+          <td>€1,000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Wnv******</td>
+          <td>52389</td>
+          <td>€800</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>kas******</td>
+          <td>50222</td>
+          <td>€800</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="leaderboard-footer">
+      🏆 FULL LEADERBOARD
+    </div>
+  </div>
+      <!-- Table End -->
+        </div>
+        <!-- Tournament End -->
+
+        <!-- Live Start -->
+        <div class="live_main">
+            <div class="live_up">
+              <i class="fa-solid fa-crown"></i><h2>Live</h2>
+            </div>
+            <div class="popular_header">
+          <div class="popular_header_relative">
+            <div class="popular_header_name active"><i class="fa-solid fa-file"></i><h5>Soccer</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-calendar"></i><h5>BG.GAME:Originals</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>FIFA</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Tennis</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Basketball</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Counter-Strike</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Data 2</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>League of Legends</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Baseball</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Cricket</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Volleyball</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Ice Hockey</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Boxing</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Table Tennis</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>NBA 2K</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eHorse Racing</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>ESoccer:Penalty</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Kabaddi</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eFighting</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eBasketball: Blitz</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eTennis</h5></div>
+          </div>
+        </div>
+         <!-- Live Box 1 Start -->
+          <div class="live_overview">
+          <div class="live_overview_up">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="box_one">
+            <div class="box_one_left">
+            <h5>69' 2nd half</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="box_one_right">
+            <i class="fa-solid fa-star-of-life"></i>
+          </div>
+          </div>
+          <div class="live_box">
+            <div class="live_box_left">
+              <div class="live_team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="live_team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+            </div>
+            <div class="live_box_right">
+              <h5>1</h5>
+              <h4>0</h4>
+            </div>
+          </div>
+          <div class="live_multiply">
+            <h5>1×2</h5>
+          </div>
+          <div class="betting_row">
+  <div class="bet_option"><span class="label deep">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label deep">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label deep">2</span><span class="odd">7.4</span></div>
+  <div class="bet_option_last"><i class="fa-solid fa-arrow-down"></i></span></div>
+</div>
+        </div>     
+        <!--Live Box 1 End -->
+
+        <div class="go_to_live">
+          <h6>Go to Live</h6><i class="fa-solid fa-arrow-right"></i>
+        </div>
+        </div>
+        <!-- Live Emd -->
+
+        <!-- Upcoming Start -->
+        <div class="upcoming_main">
+             <div class="upcoming_up">
+              <i class="fa-solid fa-crown"></i><h2>Upcoming</h2>
+            </div>
+            <div class="popular_header">
+          <div class="popular_header_relative">
+            <div class="popular_header_name active"><i class="fa-solid fa-file"></i><h5>Soccer</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-calendar"></i><h5>BG.GAME:Originals</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>FIFA</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Tennis</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Basketball</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Counter-Strike</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Data 2</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>League of Legends</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Baseball</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Cricket</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Volleyball</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Ice Hockey</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Boxing</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Table Tennis</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>NBA 2K</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eHorse Racing</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>ESoccer:Penalty</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>Kabaddi</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eFighting</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eBasketball: Blitz</h5></div>
+            <div class="popular_header_name"><i class="fa-solid fa-bell"></i><h5>eTennis</h5></div>
+          </div>
+        </div>
+          
+
+          <!-- Upcoming Box 1 Start -->
+            <div class="overview">
+          <div class="">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="">
+            <h5>Tommorrow, 00:00</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+          <div class="multiply">
+            <h5>1×2</h5>
+          </div>
+            <div class="betting_row">
+  <div class="bet_option"><span class="label deep">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label deep">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label deep">2</span><span class="odd">7.4</span></div>
+  <div class="bet_option_last"><i class="fa-solid fa-arrow-down"></i></span></div>
+</div>
+        </div>
+          <!-- Upcoming Box 1 End -->
+           <div class="overview">
+          <div class="">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="">
+            <h5>Tommorrow, 00:00</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+          <div class="multiply">
+            <h5>1×2</h5>
+          </div>
+            <div class="betting_row">
+  <div class="bet_option"><span class="label deep">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label deep">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label deep">2</span><span class="odd">7.4</span></div>
+  <div class="bet_option_last"><i class="fa-solid fa-arrow-down"></i></span></div>
+</div>
+        </div>
+          <!-- Upcoming Box 2 Start -->
+           <div class="overview">
+          <div class="">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="">
+            <h5>Tommorrow, 00:00</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+          <div class="multiply">
+            <h5>1×2</h5>
+          </div>
+            <div class="betting_row">
+  <div class="bet_option"><span class="label deep">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label deep">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label deep">2</span><span class="odd">7.4</span></div>
+  <div class="bet_option_last"><i class="fa-solid fa-arrow-down"></i></span></div>
+</div>
+        </div>
+          <!-- Upcoming Box 2 End -->
+           
+          <!-- Upcoming Box 3 Start -->
+           <div class="overview">
+          <div class="">
+            <i class="fa-solid fa-sun"></i><h6>International ' UEFA Europa League</h6>
+          </div>
+          <div class="">
+            <h5>Tommorrow, 00:00</h5><i class="fa-solid fa-icons"></i><i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>Young Boys Bern</h4>
+          </div>
+          <div class="team_name">
+            <i class="fa-solid fa-sun"></i><h4>SK Slovan Bratialava</h4>
+          </div>
+          <div class="multiply">
+            <h5>1×2</h5>
+          </div>
+            <div class="betting_row">
+  <div class="bet_option"><span class="label deep">1</span><span class="odd">1.39</span></div>
+  <div class="bet_option"><span class="label deep">Draw</span><span class="odd">4.9</span></div>
+  <div class="bet_option"><span class="label deep">2</span><span class="odd">7.4</span></div>
+  <div class="bet_option_last"><i class="fa-solid fa-arrow-down"></i></span></div>
+</div>
+        </div>
+          <!-- Upcoming Box 3 End -->
+
+        </div>
+        <!-- Upcoming End -->
+
+        <!-- Sports Footer Start -->
+         <div class="main_sports_footer">
+          <div class="sports_footer_left_right_parent">
+            <div class="sports_footer_left">
+              <h5>Odds Format</h5>
+            </div>
+            <div class="sports_footer_right">
+              <select>
+              <option selected>European</option>
+              <option>American</option>
+              <option>Hong Kong</option>
+              <option>Indonesian</option>
+              <option disabled>Malaysian</option>
+            </select>
+            </div>
+          </div>
+          <div class="sports_footer_paragraph">
+            <p>Although every effort is made to ensure data displayed on our site is accurate, this data is for information purposes and should be used as a guide only. In the event of any particular information being incorrect, we assume no liability for it.</p>
+          </div>
+         </div>
+        <!-- Sports Footer End -->
+         
+  </div>
+  <!-- js file -->
+  <script src="./slider.js"></script>
+   <script src="./sliderTwo.js"></script>
+   <script src="./searchbar.js"></script>
+</body>
+</html>

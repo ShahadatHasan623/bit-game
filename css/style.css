@@ -364,12 +364,6 @@ h1, h2, h3, h4, h5, h6{
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.banner_two_img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
-
 /* Slide Image */
 .banner_two_img img {
   width: 100%;
@@ -486,10 +480,6 @@ h1, h2, h3, h4, h5, h6{
   gap: 20px;
   z-index: 2;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.banner_two_betting-card:hover {
-  transform: translateX(-50%) translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 .banner_two_bet-title { font-size: 13px; font-weight: 600; }

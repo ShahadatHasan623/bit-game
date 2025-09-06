@@ -34,7 +34,7 @@ const banners = document.querySelectorAll(".banner_item");
     current = (current + 1) % banners.length;
     showBanner(current);
   }
-  setInterval(nextBanner, 3000);
+  setInterval(nextBanner, 4000);
 
   // init
   showBanner(current);

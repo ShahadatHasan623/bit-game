@@ -3,20 +3,21 @@ const slides = Array.from(document.querySelectorAll('.banner_two_img'));
 const indicatorsContainer = document.querySelector('.banner_two_indicators');
 
 let currentIndex = 0;
-let slidesPerView = 3;
+let slidesPerView = 1;
 
 // Calculate slidesPerView for responsive display
 function calculateSlidesPerView() {
-  if (window.innerWidth <= 768) return 1;
-  if (window.innerWidth <= 1024) return 2;
-  return 3;
+  if (window.innerWidth <= 576) return 1;   
+  if (window.innerWidth <= 768) return 1;  
+  if (window.innerWidth <= 1024) return 2;  
+  return 3;                                 
 }
 
-// Create indicators based on total slides and visible slides
+// Create indicators dynamically
 function createIndicators() {
   indicatorsContainer.innerHTML = '';
   slidesPerView = calculateSlidesPerView();
-  const totalPages = slides.length - slidesPerView + 1;
+  const totalPages = Math.max(1, slides.length - slidesPerView + 1);
 
   for (let i = 0; i < totalPages; i++) {
     const dot = document.createElement('span');
@@ -31,10 +32,18 @@ function createIndicators() {
   }
 }
 
-// Move slider based on indicator or auto-slide
+// Move slider function
 function moveSlider(index) {
   slidesPerView = calculateSlidesPerView();
-  const slideWidth = slides[0].getBoundingClientRect().width + 20;
+
+  // মোবাইলের জন্য gap বাদ
+  let slideWidth;
+  if (window.innerWidth <= 768) {
+    slideWidth = slides[0].offsetWidth; // no gap for mobile
+  } else {
+    slideWidth = slides[0].offsetWidth + 20; // desktop/tablet gap
+  }
+
   const totalSlides = slides.length;
   const maxIndex = totalSlides - slidesPerView;
   const activeIndex = Math.min(index, maxIndex);
@@ -49,7 +58,7 @@ function moveSlider(index) {
   currentIndex = activeIndex;
 }
 
-// Auto Slide every 4 seconds
+// Auto Slide
 setInterval(() => {
   const totalSlides = slides.length;
   const maxIndex = totalSlides - calculateSlidesPerView();
@@ -58,7 +67,7 @@ setInterval(() => {
   moveSlider(newIndex);
 }, 4000);
 
-// On window resize, recalc indicators and reset slider
+// Resize handle
 window.addEventListener('resize', () => {
   createIndicators();
   moveSlider(0);
